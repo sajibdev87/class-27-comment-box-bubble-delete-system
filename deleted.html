@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Deleted</title>
+</head>
+<body>
+     <h1>Deleted System</h1> 
+     <h3 id="sercate">Private information is here show</h3>  
+     <input id="deleted-confrom" type="text"placeholder="type here deleted">
+     <button id="deleted-button"disabled>deleted</button> 
+     
+     <script>
+
+          document.getElementById("deleted-button").addEventListener('click',function 
+          (){
+                    document.getElementById('sercate').style.display ='None'       
+
+          })  
+          
+          document.getElementById('deleted-confrom').addEventListener('focus',function(){
+                    document.body.style.backgroundColor='green'
+          })
+          
+          document.getElementById('deleted-confrom').addEventListener('blur',function(){
+                    document.body.style.backgroundColor='white'
+          })
+          document.getElementById('deleted-confrom').addEventListener('keyup',function(event){
+                    const deleteField =document.getElementById('deleted-confrom');
+                    const deletebutton =document.getElementById('deleted-button');
+                    
+                    if(event.target.value =='delete'){
+                    deletebutton.removeAttribute('disabled')
+                    
+                    }
+                    else{
+                    deletebutton.setAttribute('disabled',true)       
+                    }
+                    
+                 
+          })
+          
+                    
+          
+     </script>
+</body>
+</html>

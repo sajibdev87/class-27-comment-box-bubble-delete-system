@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>comment</title>
+
+</head>
+<body>
+    <div>
+          <h1>comment here</h1>
+          <p id="comment-box">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque voluptate, odit suscipit veniam deserunt expedita deleniti inventore repellat sunt saepe eos omnis quidem nobis tempora magni nihil corrupti unde recusandae debitis natus eaque! Tempora, atque, ducimus iure officia voluptatem qui debitis amet aspernatur voluptatibus et unde consectetur quidem ad!
+          </p>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque voluptate, odit suscipit veniam deserunt expedita deleniti inventore repellat sunt saepe eos omnis quidem nobis tempora magni nihil corrupti unde recusandae debitis natus eaque! Tempora, atque, ducimus iure officia voluptatem qui debitis amet aspernatur voluptatibus et unde consectetur quidem ad!
+          </p>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque voluptate, odit suscipit veniam deserunt expedita deleniti inventore repellat sunt saepe eos omnis quidem nobis tempora magni nihil corrupti unde recusandae debitis natus eaque! Tempora, atque, ducimus iure officia voluptatem qui debitis amet aspernatur voluptatibus et unde consectetur quidem ad!
+          </p>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque voluptate, odit suscipit veniam deserunt expedita deleniti inventore repellat sunt saepe eos omnis quidem nobis tempora magni nihil corrupti unde recusandae debitis natus eaque! Tempora, atque, ducimus iure officia voluptatem qui debitis amet aspernatur voluptatibus et unde consectetur quidem ad!
+          </p>
+          <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique itaque voluptate, odit suscipit veniam deserunt expedita deleniti inventore repellat sunt saepe eos omnis quidem nobis tempora magni nihil corrupti unde recusandae debitis natus eaque! Tempora, atque, ducimus iure officia voluptatem qui debitis amet aspernatur voluptatibus et unde consectetur quidem ad!
+          </p>
+    </div>
+         <div>
+          <textarea name="" id="input-filed" cols="70" rows="10"></textarea>
+          <br>
+           <button id="comment-button">comment</button>
+         </div>
+
+      <!-- <script src="js/app.js"></script> -->
+      <!-- comment box -->
+      <script>
+          document.getElementById('comment-button').addEventListener('click',function(){
+            const textInput =document.getElementById('input-filed');
+            const text =textInput.value;
+            const p = document.createElement('p');
+            p.ineerText=text;
+         
+            const box =document.getElementById('comment-box');
+            box.appendChild(p)
+          
+          
+          
+         
+          })
+      </script>
+          
+</body>
+</html>
